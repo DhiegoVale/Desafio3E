@@ -1,0 +1,20 @@
+/* CSS dos formulários de edição ou criação*/
+label{
+    font-weight: bold;
+    
+}
+.footer-page{
+    position: absolute;
+    margin-bottom: 0;
+}
+/* CSS do dashboard */
+.table{
+    margin-top: 50px;
+    justify-content: space-between;
+}
+th{
+    justify-content: space-between;
+}
+.search-form{
+    margin-right: 0;
+}
