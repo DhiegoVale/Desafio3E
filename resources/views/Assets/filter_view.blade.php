@@ -58,7 +58,7 @@
       <td>{{ $AssetData->asset_acquisition_date }}</td>
       <td>{{ $AssetData->asset_type }}</td>
       <td>{{ $AssetData->street }}, {{ $AssetData->number }}, {{ $AssetData->neighborhood }}, {{ $AssetData->city }}, {{ $AssetData->state }}, {{ $AssetData->country }}</td>
-      <td>{{ $AssetData->asset_value }}</td>
+      <td>R$ {{ $AssetData->asset_value }}</td>
       <td class="d-flex">
         <a href="{{ route('assets.edit', ['id' => $AssetData->asset_id]) }}" class="btn btn-primary">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">

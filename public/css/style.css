@@ -1,7 +1,14 @@
+/* CSS da pagina Welcome*/
+.main_page-title{
+    text-align: center;
+    font-weight: bold;
+}
 /* CSS dos formulários de edição ou criação*/
 label{
     font-weight: bold;
-    
+}
+.form-control{
+    padding-bottom: 10;
 }
 .footer-page{
     position: absolute;

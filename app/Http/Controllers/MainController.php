@@ -179,8 +179,6 @@ class MainController extends Controller
                 $LegalPerson->cnpj = $request->cnpj;
                 $LegalPerson->save();
             }
-
-
             // Resgata os dados que irão ser atualizados na localização
             $LocalizationData = [
                 'street' => $request->street,

@@ -5,11 +5,11 @@
 @section('content')
 <div id="app">
     <div class="col-md-6 offset-md-3" id="ativo-create-ativo">
-        <h2>Formulário de cadastro do ativo</h2>
+        <h2>Formulário de Edição do ativo</h2>
         <form action="/assets/{{ $AssetsData->asset_id }}/update" method="post">
             @csrf
             @method('PUT')
-            <p class="form-title">Dados da pessoa responsável pelo ativo:</p>
+            <h2>Dados da pessoa responsável pelo ativo:</h2>
             <div class="form-group">
                 <label for="name">Nome:</label>
                 <input type="text" class="form-control" value="{{ $AssetsData->person_name }}" required id="name" name="person_name" placeholder="Digite o nome da pessoa responsável pelo ativo...">
@@ -29,7 +29,7 @@
                 <label for="name">CNPJ:</label>
                 <input type="text" class="form-control" value="{{ $AssetsData->identification }}" required id="cnpj" name="cnpj" placeholder="Digite o cnpj (Só os números)..." maxlength="14" minlength="14" pattern="\d*" oninput="onlyNumbers(event)">
             </div>
-            <p class="form-title">Dados do ativo:</p>
+            <h2>Dados do ativo</h2>
             <div class="form-group">
                 <label for="name">Nome:</label>
                 <input type="text" class="form-control" value="{{ $AssetsData->asset_name }}" required id="asset_name" name="asset_name" placeholder="Digite o nome do ativo...">

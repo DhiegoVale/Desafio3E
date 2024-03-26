@@ -8,8 +8,8 @@
         <h2>Formulário de cadastro do ativo</h2>
         <form action="/assets/save" method="post">
             @csrf
-            <div class="container">
-                <p class="form-title">Dados da pessoa responsável pelo ativo:</p>
+            <div class="container border border-info">
+                <h2>Dados da pessoa responsável pelo ativo:</h2>
                 <div class="form-group">
                     <label for="name">Nome:</label>
                     <input type="text" class="form-control" required id="name" name="person_name" placeholder="Digite o nome da pessoa responsável pelo ativo...">
@@ -29,7 +29,7 @@
                     <label for="name">CNPJ:</label>
                     <input type="text" class="form-control" required id="cnpj" name="cnpj" placeholder="Digite o cnpj (Só os números)..." maxlength="14" minlength="14" pattern="\d*" oninput="onlyNumbers(event)">
                 </div>
-                <p class="form-title">Dados do ativo:</p>
+                <h2>Dados do ativo:</h2>
                 <div class="form-group">
                     <label for="name">Nome:</label>
                     <input type="text" class="form-control" required id="asset_name" name="asset_name" placeholder="Digite o nome do ativo...">
